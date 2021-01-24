@@ -13,6 +13,12 @@ public class NotesDto {
 	public NotesDto(){
 
 	}
+	public Integer getId(){
+		return id;
+	}
+	public void setId(Integer id){
+		this.id=id;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -44,7 +50,7 @@ public class NotesDto {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public Note(String title, String author, String description, String status) {
+	public NotesDto(String title, String author, String description, String status) {
 		super();
 		this.title = title;
 		this.author = author;
